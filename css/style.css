@@ -200,7 +200,7 @@ body {
 
 /* How it works  */
 
-.section-how {
+.how {
   padding: 9.6rem 0;
 }
 .step-img {
@@ -214,4 +214,11 @@ body {
   line-height: 1.2;
 }
 .subheading {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.7px;
 }
