@@ -191,16 +191,20 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+/* Reusable Grids */
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+  column-gap: 6.5rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid--center {
+  align-items: center;
+}
 
 /* How it works  */
-
 .how {
   padding: 9.6rem 0;
 }
@@ -210,9 +214,48 @@ body {
   color: #e9ecef;
   margin-bottom: 1.3rem;
 }
-.step-img {
-  width: 50%;
+.step-description {
+  line-height: 1.5;
+  font-size: 2rem;
 }
+.step-img {
+  width: 36%;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  /* height: 50; */
+  padding-bottom: 50%;
+  background: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: -1; */
+}
+.step-img-box::before {
+  width: 60%;
+  /* border-radius: 50%; */
+  /* height: 50; */
+  padding-bottom: 60%;
+  background: #fdf2e9;
+  z-index: -2;
+}
+.step-img-box::after {
+  width: 50%;
+  padding-bottom: 45%;
+  background: #fae5d3;
+  z-index: -1;
+}
+
 .heading-secondary {
   font-size: 4.4rem;
   /* font-weight: 700; */
