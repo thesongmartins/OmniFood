@@ -159,7 +159,8 @@ body {
   border-radius: 10px;
   display: inline-block;
   text-decoration: none;
-  transition: background 0.3s;
+  /* transition: background 0.3s; */
+  transition: all 0.3s;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -323,12 +324,22 @@ body {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 500;
-  background: #51cf66;
   color: #333;
   border-radius: 6.25rem;
 }
+.tag--vegetarian {
+  background: #51cf66;
+}
+.tag--vegan {
+  background: #94d82d;
+}
+.tag--paleo {
+  background: #ffd43b;
+}
 .meal-tags {
   margin-bottom: 1rem;
+  display: flex;
+  gap: 0.4rem;
 }
 .meal-name {
   font-size: 2.4rem;
@@ -360,4 +371,22 @@ body {
 }
 .meal-img {
   width: 100%;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
 }
