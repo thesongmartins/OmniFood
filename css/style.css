@@ -37,12 +37,11 @@ body {
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
-.nav-bar {
-}
+
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .nav-link:link,
