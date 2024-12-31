@@ -17,6 +17,10 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -25,11 +29,11 @@
       </a>
       <nav class="nav-bar">
         <ul class="nav-list">
-          <li><a href="#" class="nav-link">How it works</a></li>
-          <li><a href="#" class="nav-link">Meals</a></li>
-          <li><a href="#" class="nav-link">Testimonials</a></li>
-          <li><a href="#" class="nav-link">Pricing</a></li>
-          <li><a href="#" class="nav-link cta">Try it for free</a></li>
+          <li><a href="#how" class="nav-link">How it works</a></li>
+          <li><a href="#meals" class="nav-link">Meals</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#cta" class="nav-link cta">Try it for free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -37,6 +41,7 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="hero">
@@ -49,10 +54,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn More &rarr;</a>
+            <a href="#how" class="btn btn--outline">Learn More &rarr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -115,7 +120,7 @@
         </div>
       </section>
 
-      <section class="how">
+      <section class="how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -179,7 +184,8 @@
           </div>
         </div>
       </section>
-      <section class="meals">
+
+      <section class="meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -227,7 +233,6 @@
               </ul>
             </div>
           </div>
-
           <div class="meal">
             <img
               src="img/meals/meal-2.jpg"
@@ -344,7 +349,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -375,7 +380,6 @@
               </blockquote>
               <p class="testimonial-name">&mdash; Ben Hadley</p>
             </figure>
-
             <figure class="testimonial">
               <img
                 class="testimonial-img"
@@ -388,7 +392,6 @@
               </blockquote>
               <p class="testimonial-name">&mdash; Steve Miller</p>
             </figure>
-
             <figure class="testimonial">
               <img
                 class="testimonial-img"
@@ -458,7 +461,7 @@
         </div>
       </section>
 
-      <section class="pricing-section">
+      <section class="pricing-section" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -599,7 +602,8 @@
         </div>
       </section>
 
-      <section class="cta-section">
+      <!-- Section Call To Action  -->
+      <section class="cta-section" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -655,7 +659,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container grid footer-grid">
         <div class="logo-col">
           <a href="#" class="footer-logo">
@@ -690,7 +694,8 @@
           </ul>
 
           <p class="copyright">
-            Cpyright &copy; 2024 by OmniFood, Inc. All rights reserved.
+            Cpyright &copy; <span class="year">2030</span> by OmniFood, Inc. All
+            rights reserved.
           </p>
         </div>
         <div class="address-col">
@@ -718,7 +723,6 @@
             <li><a class="footer-link" href="#">Android App</a></li>
           </ul>
         </nav>
-
         <nav class="nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
@@ -728,7 +732,6 @@
             <li><a class="footer-link" href="#">Careers</a></li>
           </ul>
         </nav>
-
         <nav class="nav-col">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
