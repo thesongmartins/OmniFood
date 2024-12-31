@@ -7,6 +7,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 /* HEADER */
 .header {
@@ -23,6 +25,7 @@ body {
   background: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2rem;
@@ -67,6 +70,21 @@ body {
 .nav-link.cta:hover,
 .nav-link.cta:active {
   background: #cf711f;
+}
+/* Mobile Nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 /* HERO SECTION */
 .section-hero {
@@ -182,9 +200,9 @@ grid:last-child {
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
-.grid--5-cols {
+/* .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 .grid--center {
   align-items: center;
 }

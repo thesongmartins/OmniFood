@@ -83,4 +83,139 @@
   .cta-form {
     grid-template-columns: 1fr;
   }
+  .btn-form {
+    margin-top: 1.2rem;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+  .nav-bar {
+    background: rgb(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3.2rem;
+    /* color: var(--color-grey-dark-1);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s; */
+  }
+}
+
+/* Below 704px Smaller tabs */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo-col,
+  .address {
+    /* grid-row: 1; */
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* Below 544px (Phones) */
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .hero-section {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .btn,
+  btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(24px);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
 }
