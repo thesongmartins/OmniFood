@@ -66,13 +66,14 @@ const obs = new IntersectionObserver(function (entries) {
     const ent = entries[0]; // Destructuring
     console.log(ent);
     if (!ent.isIntersecting) {
-        document.querySelector('.header').classList.add('sticky'); // Add sticky class
+        document.body.classList.add('sticky'); // Add sticky class
     } else {
-        document.querySelector('.header').classList.remove('sticky'); // Remove sticky class
+        document.body.classList.remove('sticky'); // Remove sticky class
     }
 }, {
-    root: null,
-    threshold: 0,
+    root: null,     // Entire viewport
+    threshold: 0,   // 0% of the section
+    rootMargin: '-80px', // 80px above the section
 });
 obs.observe(sectionHeroEl);
 ///////////////////////////////////////////////////////////
